@@ -24,7 +24,7 @@ async function renderBooks(filter) {
   } else if (filter === "RATING") {
     books.sort((a, b) => b.rating - a.rating);
   }
-
+   
   const booksHtml = books
     .map((book) => {
       return `<div class="book">
